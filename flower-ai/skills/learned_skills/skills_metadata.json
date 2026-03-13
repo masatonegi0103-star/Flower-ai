@@ -1,0 +1,31 @@
+{
+  "text_length_counter": {
+    "name": "text_length_counter",
+    "description": "テキストの長さを数える",
+    "category": "text",
+    "keywords": [
+      "length",
+      "count",
+      "text"
+    ],
+    "proficiency": 0.51,
+    "usage_count": 1,
+    "success_rate": 1.0,
+    "created_at": "2026-03-13T14:29:36.873574",
+    "last_used": "2026-03-13T14:36:03.469771"
+  },
+  "search_function": {
+    "name": "search_function",
+    "description": "テキスト内を検索する",
+    "category": "search",
+    "keywords": [
+      "search",
+      "text"
+    ],
+    "proficiency": 0.54,
+    "usage_count": 4,
+    "success_rate": 1.0,
+    "created_at": "2026-03-13T14:30:10.712123",
+    "last_used": "2026-03-13T14:36:24.717274"
+  }
+}

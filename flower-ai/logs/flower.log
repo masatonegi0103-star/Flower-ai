@@ -1,0 +1,259 @@
+[2026-03-13 14:08:20] [INFO] === Flower AI 起動開始 ===
+[2026-03-13 14:08:20] [INFO] 依存関係チェック: OK
+[2026-03-13 14:08:20] [INFO] 自己修復プロセス開始
+[2026-03-13 14:08:20] [INFO] 自己修復プロセス完了
+[2026-03-13 14:08:20] [INFO] GUIを初期化中...
+[2026-03-13 14:08:21] [INFO] GUI初期化完了
+[2026-03-13 14:08:21] [INFO] Flower AIの起動に成功しました
+[2026-03-13 14:08:21] [INFO] === GUI実行開始 ===
+[2026-03-13 14:08:59] [INFO] 自己進化開始: c:\Users\user\Desktop\flower\flower-ai\brain\emotion_core.py
+[2026-03-13 14:09:10] [INFO] 自己進化成功: c:\Users\user\Desktop\flower\flower-ai\brain\emotion_core.py
+[2026-03-13 14:17:05] [ERROR] スキル読み込みエラー: Expecting value: line 1 column 1 (char 0)
+[2026-03-13 14:17:06] [INFO] === Flower AI 起動開始 ===
+[2026-03-13 14:17:06] [INFO] 依存関係チェック: OK
+[2026-03-13 14:17:06] [INFO] 自己修復プロセス開始
+[2026-03-13 14:17:06] [INFO] 自己修復プロセス完了
+[2026-03-13 14:17:06] [INFO] GUIを初期化中...
+[2026-03-13 14:17:06] [INFO] GUI初期化完了
+[2026-03-13 14:17:06] [INFO] Flower AIの起動に成功しました
+[2026-03-13 14:17:06] [INFO] === GUI実行開始 ===
+[2026-03-13 14:17:23] [INFO] スキル構築開始: 検索機能
+[2026-03-13 14:17:31] [ERROR] 無効なスキル名: 検索機能
+[2026-03-13 14:17:31] [ERROR] スキル登録失敗: 検索機能
+[2026-03-13 14:18:02] [INFO] スキル構築開始: テキストの要約機能
+[2026-03-13 14:18:07] [ERROR] 危険な関数が検出されました: exec
+[2026-03-13 14:18:07] [ERROR] 無効なスキルコード: text_summarizer
+[2026-03-13 14:18:07] [ERROR] スキル登録失敗: text_summarizer
+[2026-03-13 14:18:34] [INFO] スキル構築開始: 音声入力
+[2026-03-13 14:18:39] [ERROR] 危険な関数が検出されました: exec
+[2026-03-13 14:18:39] [ERROR] 無効なスキルコード: voice_input
+[2026-03-13 14:18:39] [ERROR] スキル登録失敗: voice_input
+[2026-03-13 14:19:51] [INFO] スキル構築開始: 文章要約
+[2026-03-13 14:19:55] [ERROR] 無効なスキル名: 文章要約スキル
+[2026-03-13 14:19:55] [ERROR] スキル登録失敗: 文章要約スキル
+[2026-03-13 14:20:59] [INFO] スキル構築開始: 画像認識機能
+[2026-03-13 14:21:03] [ERROR] 危険な関数が検出されました: exec
+[2026-03-13 14:21:03] [ERROR] 無効なスキルコード: image_recognition
+[2026-03-13 14:21:03] [ERROR] スキル登録失敗: image_recognition
+[2026-03-13 14:21:18] [INFO] === Flower AI 終了 ===
+[2026-03-13 14:29:15] [ERROR] スキル読み込みエラー: Expecting value: line 1 column 1 (char 0)
+[2026-03-13 14:29:15] [INFO] === Flower AI 起動開始 ===
+[2026-03-13 14:29:15] [INFO] 依存関係チェック: OK
+[2026-03-13 14:29:15] [INFO] 自己修復プロセス開始
+[2026-03-13 14:29:15] [INFO] 自己修復プロセス完了
+[2026-03-13 14:29:15] [INFO] GUIを初期化中...
+[2026-03-13 14:29:15] [INFO] GUI初期化完了
+[2026-03-13 14:29:15] [INFO] Flower AIの起動に成功しました
+[2026-03-13 14:29:15] [INFO] === GUI実行開始 ===
+[2026-03-13 14:29:33] [INFO] スキル習得要求: テキストの長さを数える機能
+[2026-03-13 14:29:33] [INFO] スキル構築開始: テキストの長さを数える機能
+[2026-03-13 14:29:33] [INFO] LLMにスキル生成を依頼中...
+[2026-03-13 14:29:36] [INFO] LLM応答を受け取りました
+[2026-03-13 14:29:36] [INFO] 応答内容:
+text_length_counter
+テキストの長さを数える
+text
+length,count,text
+
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) == 0:
+        return "エラー: テキストを入力してください"
+    
+    # 変数定義
+    input_text = str(args[0])
+    
+    # テキストの長さを計算
+    text_length = len(input_text)
+    
+    # 結果を作成
+    result = f"テキストの長さ: {text_length}文字"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:29:36] [INFO] スキル名: text_length_counter
+[2026-03-13 14:29:36] [INFO] 説明: テキストの長さを数える
+[2026-03-13 14:29:36] [INFO] カテゴリ: text
+[2026-03-13 14:29:36] [INFO] キーワード: length,count,text
+[2026-03-13 14:29:36] [INFO] 抽出されたコード:
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) == 0:
+        return "エラー: テキストを入力してください"
+    
+    # 変数定義
+    input_text = str(args[0])
+    
+    # テキストの長さを計算
+    text_length = len(input_text)
+    
+    # 結果を作成
+    result = f"テキストの長さ: {text_length}文字"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:29:36] [INFO] コード検証開始: text_length_counter
+[2026-03-13 14:29:36] [INFO] 構文チェック: OK
+[2026-03-13 14:29:36] [INFO] f文字列の検証中...
+[2026-03-13 14:29:36] [INFO] 変数定義の検証中...
+[2026-03-13 14:29:36] [INFO] 変数定義の検証を開始...
+[2026-03-13 14:29:36] [INFO] 定義された変数: input_text
+[2026-03-13 14:29:36] [INFO] 定義された変数: text_length
+[2026-03-13 14:29:36] [INFO] 定義された変数: result
+[2026-03-13 14:29:36] [INFO] 未定義変数が見つかりました: {'execute', 'f'}
+[2026-03-13 14:29:36] [ERROR] 未定義変数: {'execute', 'f'}
+[2026-03-13 14:29:36] [INFO] 修正後の構文チェック: OK
+[2026-03-13 14:29:36] [INFO] 簡単な実行テスト中...
+[2026-03-13 14:29:36] [INFO] スキルの実行テストを開始...
+[2026-03-13 14:29:36] [INFO] テスト実行成功: エラー: テキストを入力してください
+[2026-03-13 14:29:36] [INFO] コード検証完了: text_length_counter
+[2026-03-13 14:29:36] [INFO] 修正後のコード:
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) == 0:
+        return "エラー: テキストを入力してください"
+    
+    # 変数定義
+    input_text = str(args[0])
+    
+    # テキストの長さを計算
+    text_length = len(input_text)
+    
+    # 結果を作成
+    result = f"テキストの長さ: {text_length}文字"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:29:36] [INFO] スキル登録開始...
+[2026-03-13 14:29:36] [INFO] スキル追加開始: text_length_counter
+[2026-03-13 14:29:36] [INFO] スキルコード構文チェック: OK
+[2026-03-13 14:29:36] [INFO] スキルコード検証: OK
+[2026-03-13 14:29:36] [INFO] スキルコードを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\text_length_counter.py
+[2026-03-13 14:29:36] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:29:36] [INFO] スキルを追加しました: text_length_counter
+[2026-03-13 14:29:36] [INFO] スキル構築成功: text_length_counter
+[2026-03-13 14:30:05] [INFO] スキル習得要求: 検索機能
+[2026-03-13 14:30:05] [INFO] スキル構築開始: 検索機能
+[2026-03-13 14:30:05] [INFO] LLMにスキル生成を依頼中...
+[2026-03-13 14:30:10] [INFO] LLM応答を受け取りました
+[2026-03-13 14:30:10] [INFO] 応答内容:
+search_function
+テキスト内を検索する
+search
+search,text
+
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) < 2:
+        return "エラー: 検索対象のテキストと検索語を入力してください"
+    
+    # 変数定義
+    target_text = str(args[0])
+    search_term = str(args[1])
+    
+    # 検索処理
+    try:
+        occurrences = target_text.lower().count(search_term.lower())
+    except Exception as e:
+        return f"エラー: 検索中に問題が発生しました - {str(e)}"
+    
+    # 結果を作成
+    result = f"'{search_term}' はテキスト内に {occurrences} 回見つかりました"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:30:10] [INFO] スキル名: search_function
+[2026-03-13 14:30:10] [INFO] 説明: テキスト内を検索する
+[2026-03-13 14:30:10] [INFO] カテゴリ: search
+[2026-03-13 14:30:10] [INFO] キーワード: search,text
+[2026-03-13 14:30:10] [INFO] 抽出されたコード:
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) < 2:
+        return "エラー: 検索対象のテキストと検索語を入力してください"
+    
+    # 変数定義
+    target_text = str(args[0])
+    search_term = str(args[1])
+    
+    # 検索処理
+    try:
+        occurrences = target_text.lower().count(search_term.lower())
+    except Exception as e:
+        return f"エラー: 検索中に問題が発生しました - {str(e)}"
+    
+    # 結果を作成
+    result = f"'{search_term}' はテキスト内に {occurrences} 回見つかりました"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:30:10] [INFO] コード検証開始: search_function
+[2026-03-13 14:30:10] [INFO] 構文チェック: OK
+[2026-03-13 14:30:10] [INFO] f文字列の検証中...
+[2026-03-13 14:30:10] [INFO] 変数定義の検証中...
+[2026-03-13 14:30:10] [INFO] 変数定義の検証を開始...
+[2026-03-13 14:30:10] [INFO] 定義された変数: target_text
+[2026-03-13 14:30:10] [INFO] 定義された変数: search_term
+[2026-03-13 14:30:10] [INFO] 定義された変数: occurrences
+[2026-03-13 14:30:10] [INFO] 定義された変数: result
+[2026-03-13 14:30:10] [INFO] 未定義変数が見つかりました: {'Exception', 'lower', 'as', 'count', 'execute', 'f', 'e'}
+[2026-03-13 14:30:10] [ERROR] 未定義変数: {'Exception', 'lower', 'as', 'count', 'execute', 'f', 'e'}
+[2026-03-13 14:30:10] [INFO] 修正後の構文チェック: OK
+[2026-03-13 14:30:10] [INFO] 簡単な実行テスト中...
+[2026-03-13 14:30:10] [INFO] スキルの実行テストを開始...
+[2026-03-13 14:30:10] [INFO] テスト実行成功: エラー: 検索対象のテキストと検索語を入力してください
+[2026-03-13 14:30:10] [INFO] コード検証完了: search_function
+[2026-03-13 14:30:10] [INFO] 修正後のコード:
+def execute(*args, **kwargs):
+    # 入力チェック
+    if len(args) < 2:
+        return "エラー: 検索対象のテキストと検索語を入力してください"
+    
+    # 変数定義
+    target_text = str(args[0])
+    search_term = str(args[1])
+    
+    # 検索処理
+    try:
+        occurrences = target_text.lower().count(search_term.lower())
+    except Exception as e:
+        return f"エラー: 検索中に問題が発生しました - {str(e)}"
+    
+    # 結果を作成
+    result = f"'{search_term}' はテキスト内に {occurrences} 回見つかりました"
+    
+    # 結果を返す
+    return result
+[2026-03-13 14:30:10] [INFO] スキル登録開始...
+[2026-03-13 14:30:10] [INFO] スキル追加開始: search_function
+[2026-03-13 14:30:10] [INFO] スキルコード構文チェック: OK
+[2026-03-13 14:30:10] [INFO] スキルコード検証: OK
+[2026-03-13 14:30:10] [INFO] スキルコードを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\search_function.py
+[2026-03-13 14:30:10] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:30:10] [INFO] スキルを追加しました: search_function
+[2026-03-13 14:30:10] [INFO] スキル構築成功: search_function
+[2026-03-13 14:31:00] [INFO] スキル実行: search_function, args: ('youtube',)
+[2026-03-13 14:31:00] [INFO] スキル実行開始: search_function
+[2026-03-13 14:31:00] [INFO] スキルの execute 関数を呼び出し中...
+[2026-03-13 14:31:00] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:31:00] [INFO] スキル実行成功: search_function
+[2026-03-13 14:31:12] [INFO] スキル実行: search_function, args: ('おはよう',)
+[2026-03-13 14:31:12] [INFO] スキル実行開始: search_function
+[2026-03-13 14:31:12] [INFO] スキルの execute 関数を呼び出し中...
+[2026-03-13 14:31:12] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:31:12] [INFO] スキル実行成功: search_function
+[2026-03-13 14:32:27] [INFO] スキル実行: search_function, args: ('ふまん',)
+[2026-03-13 14:32:27] [INFO] スキル実行開始: search_function
+[2026-03-13 14:32:27] [INFO] スキルの execute 関数を呼び出し中...
+[2026-03-13 14:32:27] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:32:27] [INFO] スキル実行成功: search_function
+[2026-03-13 14:36:03] [INFO] スキル実行: text_length_counter, args: ('こんにちは',)
+[2026-03-13 14:36:03] [INFO] スキル実行開始: text_length_counter
+[2026-03-13 14:36:03] [INFO] スキルの execute 関数を呼び出し中...
+[2026-03-13 14:36:03] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:36:03] [INFO] スキル実行成功: text_length_counter
+[2026-03-13 14:36:24] [INFO] スキル実行: search_function, args: ('人間',)
+[2026-03-13 14:36:24] [INFO] スキル実行開始: search_function
+[2026-03-13 14:36:24] [INFO] スキルの execute 関数を呼び出し中...
+[2026-03-13 14:36:24] [INFO] メタデータを保存しました: c:\Users\user\Desktop\flower\flower-ai\skills\learned_skills\skills_metadata.json
+[2026-03-13 14:36:24] [INFO] スキル実行成功: search_function
